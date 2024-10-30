@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- x축 스크롤막기 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
+    <title>PIGEON</title>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="페이지 제목">
+    <meta property="og:description" content="페이지 설명">
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg">
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="페이지 제목">
+    <meta name="twitter:description" content="페이지 설명">
+    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html">
+    <meta name="twitter:domain" content="사이트 명">
+
+    <!-- 파비콘 -->
+    <!-- <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico"> -->
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- line awesome -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- css -->
+    <link rel="stylesheet" href="../resources/css/output/pattern_css.css">
+
+    <!-- kakao map -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script"
+        src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <!-- jquery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- lodash -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="../resources/js/include.js"></script>
+    <script defer src="../resources/js/pattern/ui-swiper.js"></script>
+    <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
+    <script src="../resources/js/pattern/ui-fullpage.js"></script>
+    <!-- Fullpage -->
+    <!-- fullPage.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" />
+
+    <!-- jQuery (필수) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- fullPage.js JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
+</head>
+
+<body>
+    <!-- 본문 바로가기 영역 -->
+    <div id="skip-nav">
+        <a href="#gnb">메뉴 바로가기</a>
+        <a href="#container">본문 바로가기</a>
+    </div>
+    <div class="wrap">
+        <header id="header">
+            <div class="inner">
+                <h1 id="logo">
+                    <a href="#">
+                        <span>header_logo</span>
+                    </a>
+                </h1>
+                <div class="header__sub-menu">
+                    <nav id="gnb">
+                        <ul class="gnb__depth1">
+                            <li>
+                                <a href="#">
+                                    <span>피죤 소개</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>브랜드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>피죤 소식</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>채용 및 문의</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="util">
+                        <!-- active시 드롭다운 활성화 -->
+                        <div class="lang active">
+                            <button class="lang__btn">kor</button>
+                            <ul class="lang__lst">
+                                <li><a href="#">kor</a></li>
+                                <li><a href="#">eng</a></li>
+                            </ul>
+                        </div>
+                        <button class="all_menu">
+                            <span class="blind">전체메뉴</span>
+                        </button>
+                        <div class="goto_mall__btn">
+                            <a href="https://brand.naver.com/pigeon" target="_blank">
+                                <span>피죤 공식몰</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- all menu(햄버거 버튼) -->
+            <div class="nav-all__wrap">
+                <nav id="nav-all">
+                    <ul class="gnb__depth1">
+                        <li>
+                            <a href="#">
+                                <span>피죤 소개</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>브랜드</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>피죤 소식</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>채용 및 문의</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="close">
+                        <span class="blind">전체메뉴 닫기</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 메인 애니메이션 -->
+        <div class="main-visual">
+            <div class="main-visual__ani">
+                <div class="main-visual__txtBox">
+                    <div class="main-visual__tit">PIGEON</div>
+                    <div class="main-visual__con">
+                        <span class="main-visual__con__txt">피죤은 고도의 기술력을</span>
+                        <span class="main-visual__con__txt">가지고 시대 변화에 발맞춰 지속적인 발전을</span>
+                        <span class="main-visual__con__txt">이루어 나갑니다</span>
+                    </div>
+                </div>
+                <div class="main-visual__circle">
+                    <video src="../resources/images/pattern/common/main-ani.mp4" playsinline="" loop="" muted=""
+                        autoplay=""> </video>
+                    <div class="main-visual__txtBox">
+                        <div class="main-visual__tit">PIGEON</div>
+                        <div class="main-visual__con">
+                            <span class="main-visual__con__txt">피죤은 고도의 기술력을</span>
+                            <span class="main-visual__con__txt">가지고 시대 변화에 발맞춰 지속적인 발전을</span>
+                            <span class="main-visual__con__txt">이루어 나갑니다</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- 슬라이드 -->
+        <div class="slide__wrap">
+            <div class="slide">
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="swiper-slide__txt inner">
+                                <strong>Best Qualty</strong>
+                                <strong>Life Partner</strong>
+                                <p>더욱 깨끗한 일상생활을 위해</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="swiper-slide__txt inner">
+                                <strong>PIGEON</strong>
+                                <p>불필요한 증점제와 색소는 빼고 3배 더 강화되어</p>
+                                <p>풍부해진 향기를 경험해보세요.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <div class="swiper-slide__txt inner">
+                                <strong>New Products</strong>
+                                <p>피죤의 신제품 디퓨저.</p>
+                                <p>세가지 향을 지금 경험해 보세요.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide slide1">
+                            <div class="swiper-slide__prod-tit inner">
+                                <p>ACT'Z</p>
+                            </div>
+                            <div class="swiper-slide__prod-cont inner">
+                                <img src="../resources/images/pattern/common/ACT'Z.svg" alt="ACT'Z">
+                                <p>더욱 깨끗한 일상생활을 위해</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide2">
+                            <div class="swiper-slide__prod-tit inner">
+                                <p>PIGEON</p>
+                            </div>
+                            <div class="swiper-slide__prod-cont inner">
+                                <img src="../resources/images/pattern/common/PIGEON.png" alt="PIGEON">
+                                <p>풍부해진 향기를 경험해보세요</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide3">
+                            <div class="swiper-slide__prod-tit inner">
+                                <p>DIFFUSER</p>
+                            </div>
+                            <div class="swiper-slide__prod-cont inner">
+                                <img src="../resources/images/pattern/common/DIFFUSER.png" alt="DIFFUSER">
+                                <p>세가지 향을 경험해보세요</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 여기서 버튼을 슬라이더 외부로 이동 -->
+                <span class="swiper-button-next"></span>
+            </div>
+        </div>
+
+        <!-- brand -->
+        <div class="brand">
+            <div class="inner">
+                <div class="brand__tit" data-aos="fade-up" data-aos-duration="1000">
+                    <strong>BRAND</strong>
+                    <pre>
+피죤으로 청결과 향기로 가득한 일상,
+한 번에 완성하세요. 
+매일 새롭게, 더 상쾌한 공간을 
+만들어 드립니다.     
+    </pre>
+                    <button class="brand__more">
+                        <a href="#">MORE VIEW</a>
+                    </button>
+                </div>
+
+                <div class="brand-product__wrap">
+                    <ul>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Fabric Conditioner.svg"
+                                        alt="Fabric Conditioner">
+                                    <p class="brand-product__cont__eng">Fabric Conditioner</p>
+                                    <p class="brand-product__cont__kor">피죤 섬유유연제</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Kitchen Detergent.svg"
+                                        alt="Kitchen Detergent">
+                                    <p class="brand-product__cont__eng">Kitchen Detergent</p>
+                                    <p class="brand-product__cont__kor">퓨어 주방세제</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Washing Machine Cleaner.svg"
+                                        alt="Washing Machine Cleaner">
+                                    <p class="brand-product__cont__eng">Washing Machine Cleaner</p>
+                                    <p class="brand-product__cont__kor">무균무때</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Wool Detergent.svg"
+                                        alt="Wool Detergent">
+                                    <p class="brand-product__cont__eng">Wool Detergent</p>
+                                    <p class="brand-product__cont__kor">울터치</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Stain Removal Detergent.svg"
+                                        alt="Fabric Conditioner">
+                                    <p class="brand-product__cont__eng">Stain Removal Detergent</p>
+                                    <p class="brand-product__cont__kor">액츠</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Dehumidifier.svg" alt="Dehumidifier">
+                                    <p class="brand-product__cont__eng">Dehumidifier</p>
+                                    <p class="brand-product__cont__kor">습기제로</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Kitchen Detergent.svg"
+                                        alt="Kitchen Detergent">
+                                    <p class="brand-product__cont__eng">Kitchen Detergent</p>
+                                    <p class="brand-product__cont__kor">퓨어 주방세제</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Fabric Conditioner.svg"
+                                        alt="Fabric Conditioner">
+                                    <p class="brand-product__cont__eng">Fabric Conditioner</p>
+                                    <p class="brand-product__cont__kor">피죤 섬유유연제</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Washing Machine Cleaner.svg"
+                                        alt="Washing Machine Cleaner">
+                                    <p class="brand-product__cont__eng">Washing Machine Cleaner</p>
+                                    <p class="brand-product__cont__kor">무균무때</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Wool Detergent.svg"
+                                        alt="Wool Detergent">
+                                    <p class="brand-product__cont__eng">Wool Detergent</p>
+                                    <p class="brand-product__cont__kor">울터치</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Stain Removal Detergent.svg"
+                                        alt="Fabric Conditioner">
+                                    <p class="brand-product__cont__eng">Stain Removal Detergent</p>
+                                    <p class="brand-product__cont__kor">액츠</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Dehumidifier.svg" alt="Dehumidifier">
+                                    <p class="brand-product__cont__eng">Dehumidifier</p>
+                                    <p class="brand-product__cont__kor">습기제로</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Kitchen Detergent.svg"
+                                        alt="Kitchen Detergent">
+                                    <p class="brand-product__cont__eng">Kitchen Detergent</p>
+                                    <p class="brand-product__cont__kor">퓨어 주방세제</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <!-- 두번째 ul -->
+                    <ul>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Washing Machine Cleaner.svg"
+                                        alt="Washing Machine Cleaner">
+                                    <p class="brand-product__cont__eng">Washing Machine Cleaner</p>
+                                    <p class="brand-product__cont__kor">무균무때</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Wool Detergent.svg"
+                                        alt="Wool Detergent">
+                                    <p class="brand-product__cont__eng">Wool Detergent</p>
+                                    <p class="brand-product__cont__kor">울터치</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Stain Removal Detergent.svg"
+                                        alt="Fabric Conditioner">
+                                    <p class="brand-product__cont__eng">Stain Removal Detergent</p>
+                                    <p class="brand-product__cont__kor">액츠</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Dehumidifier.svg" alt="Dehumidifier">
+                                    <p class="brand-product__cont__eng">Dehumidifier</p>
+                                    <p class="brand-product__cont__kor">습기제로</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Fabric Conditioner.svg"
+                                        alt="Fabric Conditioner">
+                                    <p class="brand-product__cont__eng">Fabric Conditioner</p>
+                                    <p class="brand-product__cont__kor">피죤 섬유유연제</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Kitchen Detergent.svg"
+                                        alt="Kitchen Detergent">
+                                    <p class="brand-product__cont__eng">Kitchen Detergent</p>
+                                    <p class="brand-product__cont__kor">퓨어 주방세제</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Washing Machine Cleaner.svg"
+                                        alt="Washing Machine Cleaner">
+                                    <p class="brand-product__cont__eng">Washing Machine Cleaner</p>
+                                    <p class="brand-product__cont__kor">무균무때</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Dehumidifier.svg" alt="Dehumidifier">
+                                    <p class="brand-product__cont__eng">Dehumidifier</p>
+                                    <p class="brand-product__cont__kor">습기제로</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Washing Machine Cleaner.svg"
+                                        alt="Washing Machine Cleaner">
+                                    <p class="brand-product__cont__eng">Washing Machine Cleaner</p>
+                                    <p class="brand-product__cont__kor">무균무때</p>
+                                </a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Wool Detergent.svg"
+                                        alt="Wool Detergent">
+                                    <p class="brand-product__cont__eng">Wool Detergent</p>
+                                    <p class="brand-product__cont__kor">울터치</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Stain Removal Detergent.svg"
+                                        alt="Fabric Conditioner">
+                                    <p class="brand-product__cont__eng">Stain Removal Detergent</p>
+                                    <p class="brand-product__cont__kor">액츠</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Dehumidifier.svg" alt="Dehumidifier">
+                                    <p class="brand-product__cont__eng">Dehumidifier</p>
+                                    <p class="brand-product__cont__kor">습기제로</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Fabric Conditioner.svg"
+                                        alt="Fabric Conditioner">
+                                    <p class="brand-product__cont__eng">Fabric Conditioner</p>
+                                    <p class="brand-product__cont__kor">피죤 섬유유연제</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Kitchen Detergent.svg"
+                                        alt="Kitchen Detergent">
+                                    <p class="brand-product__cont__eng">Kitchen Detergent</p>
+                                    <p class="brand-product__cont__kor">퓨어 주방세제</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Washing Machine Cleaner.svg"
+                                        alt="Washing Machine Cleaner">
+                                    <p class="brand-product__cont__eng">Washing Machine Cleaner</p>
+                                    <p class="brand-product__cont__kor">무균무때</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="brand-product__cont">
+                                <a href="#">
+                                    <img src="../resources/images/pattern/common/Dehumidifier.svg" alt="Dehumidifier">
+                                    <p class="brand-product__cont__eng">Dehumidifier</p>
+                                    <p class="brand-product__cont__kor">습기제로</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!--메인 -->
+        <main id="container">
+            <!-- cf & news -->
+            <section class="sec sec-g sec-news" data-aos="fade-right" data-aos-duration="1500">
+                <div class="inner">
+                    <h2 class="sec__tit">CF & NEWS</h2>
+                    <div class="sec__cont">
+
+                        <!-- 데스크탑 슬라이드 구간 -->
+                        <div class="dt-slide">
+                            <ul class="dt-slide__lst">
+                                <li>
+                                    <div class="dt-slide slide1">
+                                        <a href="#">
+                                            <div class="sec-image"></div>
+                                            <div class="sec-txt">
+                                                <strong>[피죤X이보영] 광고 촬영 메이킹 영상</strong>
+                                                <em>2024.10.25</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dt-slide slide2">
+                                        <a href="#">
+                                            <div class="sec-image"></div>
+                                            <div class="sec-txt">
+                                                <strong>[피죤X이보영] 자연에 가까운 실내건조</strong>
+                                                <em>2024.10.24</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dt-slide slide3">
+                                        <a href="#">
+                                            <div class="sec-image"></div>
+                                            <div class="sec-txt">
+                                                <strong>[피죤X이보영] 이보영의 추천 향은?</strong>
+                                                <em>2024.10.24</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+
+                                    <div class="dt-slide slide4">
+                                        <a href="#">
+                                            <div class="sec-image"></div>
+                                            <div class="sec-txt">
+                                                <strong>[피죤X박서준] 박서준 인터뷰 편</strong>
+                                                <em>2024.10.23</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dt-slide slide5">
+                                        <a href="#">
+                                            <div class="sec-image"></div>
+                                            <div class="sec-txt">
+                                                <strong>[피죤X박서준] 상쾌함과 상쾌함이 만나다</strong>
+                                                <em>2024.10.22</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="dt-slide slide6">
+                                        <a href="#">
+                                            <div class="sec-image"></div>
+                                            <div class="sec-txt">
+                                                <strong>무균무때 - 광희 [인터뷰편]</strong>
+                                                <em>2024.10.21</em>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper slide-news">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide slide1">
+                                    <a href="#">
+                                        <div class="sec-image"></div>
+                                        <div class="sec-txt">
+                                            <strong>[피죤X이보영] 광고 촬영 메이킹 영상</strong>
+                                            <em>2024.10.25</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slide2">
+                                    <a href="#">
+                                        <div class="sec-image"></div>
+                                        <div class="sec-txt">
+                                            <strong>[피죤X이보영] 자연에 가까운 실내건조</strong>
+                                            <em>2024.10.24</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slide3">
+                                    <a href="#">
+                                        <div class="sec-image"></div>
+                                        <div class="sec-txt">
+                                            <strong>[피죤X이보영] 이보영의 추천 향은?</strong>
+                                            <em>2024.10.24</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slide4">
+                                    <a href="#">
+                                        <div class="sec-image"></div>
+                                        <div class="sec-txt">
+                                            <strong>[피죤X박서준] 박서준 인터뷰 편</strong>
+                                            <em>2024.10.23</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slide5">
+                                    <a href="#">
+                                        <div class="sec-image"></div>
+                                        <div class="sec-txt">
+                                            <strong>[피죤X박서준] 상쾌함과 상쾌함이 만나다</strong>
+                                            <em>2024.10.22</em>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide slide6">
+                                    <a href="#">
+                                        <div class="sec-image"></div>
+                                        <div class="sec-txt">
+                                            <strong>무균무때 - 광희 [인터뷰편]</strong>
+                                            <em>2024.10.21</em>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="sec-g__more">more+</a>
+                </div>
+            </section>
+
+            <!-- contact -->
+            <section class="sec sec-contact" data-aos="fade-left" data-aos-duration="1000">
+                <div class="inner">
+                    <h2 class="sec__tit">CONTACT</h2>
+                    <div class="sec__cont">
+                        <div class="sec__pigeon__adr">
+                            <strong>피죤본사</strong>
+                            <p>서울특별시 강남구 논현로 531 피죤빌딩</p>
+                        </div>
+                        <div class="sec__center__adr">
+                            <strong>진천 제조 센터</strong>
+                            <p>충청북도 진천군 초평면 용정길 29-7</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec__map">
+                    <div id="daumRoughmapContainer1729840237502" class="root_daum_roughmap root_daum_roughmap_landing">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- footer -->
+        <footer id="footer" include-html="./layout/footer.html"></footer>
+    </div>
+</body>
+
+</html>
