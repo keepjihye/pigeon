@@ -1,7 +1,5 @@
 # PIGEON
 
-KRDS (https://uiux.egovframe.go.kr/) 템플릿
-
 ## 프로젝트 구조
 
 ```bash
