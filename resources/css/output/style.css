@@ -3533,8 +3533,9 @@ input[type=checkbox] {
     font-size: 12vw;
   }
   .main-visual__txtBox .main-visual__tit img {
-    width: 12vw;
-    padding-bottom: 1.5%;
+    width: 9vw;
+    padding-bottom: 30px;
+    padding-right: 5px;
   }
 }
 @media (max-width: 1023px) {
