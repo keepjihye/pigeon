@@ -351,10 +351,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-weight: bold;
     text-align: center;
     white-space: nowrap;
     .main-visual__tit {
+        font-weight: bold;
         @include tabletMore {
             font-size: 12vw;
             img {
@@ -382,7 +382,9 @@
         }
     }
     .main-visual__con {
+        font-weight: 500;
         font-size: 1rem;
+        font-family: "Noto Sans KR", serif;
         @include tabletMore {
             font-size: 1.3vw;
         }

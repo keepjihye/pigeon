@@ -3528,9 +3528,11 @@ input[type=checkbox] {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-weight: bold;
   text-align: center;
   white-space: nowrap;
+}
+.main-visual__txtBox .main-visual__tit {
+  font-weight: bold;
 }
 @media (min-width: 1024px) {
   .main-visual__txtBox .main-visual__tit {
@@ -3562,7 +3564,9 @@ input[type=checkbox] {
   }
 }
 .main-visual__txtBox .main-visual__con {
+  font-weight: 500;
   font-size: 1rem;
+  font-family: "Noto Sans KR", serif;
 }
 @media (min-width: 1024px) {
   .main-visual__txtBox .main-visual__con {
