@@ -4374,13 +4374,13 @@ input[type=checkbox] {
 #footer .foot_menu__list {
   width: 100%;
   display: flex;
-  font-size: 1rem;
+  font-size: 0.9rem;
   justify-content: space-between;
 }
 @media (min-width: 600px) and (max-width: 1023px) {
   #footer .foot_menu__list {
     width: 60%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 @media (min-width: 1024px) {
@@ -4413,9 +4413,20 @@ input[type=checkbox] {
 #footer .footer_info {
   font-size: 1rem;
 }
+@media (max-width: 599px) {
+  #footer .footer_info {
+    font-size: 0.8rem;
+  }
+}
 #footer .footer_info .footer_info__copyright {
+  white-space: nowrap;
   padding-top: 10px;
   color: #8e8e8e;
+}
+@media (max-width: 599px) {
+  #footer .footer_info .footer_info__copyright {
+    font-size: 0.7rem;
+  }
 }
 @media (min-width: 1024px) {
   #footer .footer_info {
