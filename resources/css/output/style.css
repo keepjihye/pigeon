@@ -3543,7 +3543,7 @@ input[type=checkbox] {
     font-size: 20vw;
   }
   .main-visual__txtBox .main-visual__tit img {
-    width: 19vw;
+    width: 16vw;
     padding-top: 1.5vw;
     padding-right: 5px;
   }
@@ -4176,7 +4176,7 @@ input[type=checkbox] {
   gap: 10px;
   position: absolute;
   top: 10px;
-  left: 140px;
+  left: 135px;
   font-size: 1.2rem;
   color: #555555;
 }
