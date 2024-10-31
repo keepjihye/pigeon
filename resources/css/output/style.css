@@ -3534,7 +3534,7 @@ input[type=checkbox] {
   }
   .main-visual__txtBox .main-visual__tit img {
     width: 9vw;
-    padding-bottom: 30px;
+    padding-top: 2vw;
     padding-right: 5px;
   }
 }
@@ -3543,8 +3543,9 @@ input[type=checkbox] {
     font-size: 20vw;
   }
   .main-visual__txtBox .main-visual__tit img {
-    width: 20vw;
-    padding-bottom: 1.5%;
+    width: 18vw;
+    padding-top: 2vw;
+    padding-right: 5px;
   }
 }
 .main-visual__txtBox .main-visual__con {
