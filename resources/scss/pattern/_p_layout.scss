@@ -124,14 +124,14 @@
 
 // nav-all
 .nav-all__wrap {
-    display: none;
+    height: 0;
     font-family: "Noto Sans KR", serif;
     &.active {
         position: relative;
         display: block;
         width: 100vw;
         height: 100vh;
-        background-color: $gray-20;
+        background-color: rgba(255, 246, 251, 0.6);
         position: fixed;
         top: 0;
         left: 0;
@@ -139,7 +139,8 @@
     background-color: $gray-60;
 
     #nav-all {
-        display: none;
+        height: 0;
+        overflow: hidden;
         &.active {
             display: block;
             padding: 30px;
@@ -157,6 +158,7 @@
             background: $white;
             // 뒷배경 블러처리하기
             border-radius: 0 0 20px 20px;
+            transition: 0.8s;
 
             .close {
                 position: absolute;

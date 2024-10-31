@@ -15,6 +15,7 @@ $('#nav-all').click(function () {
     $('.nav-all__wrap').removeClass("active");;
 });
 
+
 $(".lang").on({
     click: function () {
         $(".lang__lst").slideDown();

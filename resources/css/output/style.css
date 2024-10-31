@@ -3299,7 +3299,7 @@ input[type=checkbox] {
 }
 
 .nav-all__wrap {
-  display: none;
+  height: 0;
   font-family: "Noto Sans KR", serif;
   background-color: #717171;
 }
@@ -3308,13 +3308,14 @@ input[type=checkbox] {
   display: block;
   width: 100vw;
   height: 100vh;
-  background-color: #e4e4e4;
+  background-color: rgba(255, 246, 251, 0.6);
   position: fixed;
   top: 0;
   left: 0;
 }
 .nav-all__wrap #nav-all {
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 .nav-all__wrap #nav-all.active {
   display: block;
@@ -3327,6 +3328,7 @@ input[type=checkbox] {
   height: 520px;
   background: #fff;
   border-radius: 0 0 20px 20px;
+  transition: 0.8s;
 }
 @media (min-width: 1024px) {
   .nav-all__wrap #nav-all.active {
