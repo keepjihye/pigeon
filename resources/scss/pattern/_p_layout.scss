@@ -388,11 +388,11 @@
         font-size: 1rem;
         font-family: "Noto Sans KR", serif;
         @include tabletMore {
-            font-size: 1.3vw;
+            font-size: 1.2vw;
         }
 
         @include tablet {
-            font-size: 1.8vw;
+            font-size: 1.7vw;
         }
 
         @include mobile {
