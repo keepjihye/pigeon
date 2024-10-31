@@ -3170,6 +3170,11 @@ input[type=checkbox] {
   border-width: 2px;
 }
 
+.cursor {
+  position: absolute;
+  z-index: 10000;
+}
+
 .inner {
   width: 100%;
   max-width: 1500px;
