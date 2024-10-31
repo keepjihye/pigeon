@@ -3223,7 +3223,6 @@ input[type=checkbox] {
 }
 
 #header {
-  background-color: #fff;
   z-index: 100;
   position: fixed;
   top: 0;
@@ -3293,7 +3292,7 @@ input[type=checkbox] {
   color: #1d1d1d;
 }
 #gnb .gnb__depth1 a:hover {
-  color: #5089ef;
+  color: rgb(255, 103, 153);
   transition: 0.4s;
 }
 
@@ -3467,6 +3466,7 @@ input[type=checkbox] {
 }
 
 .main-visual {
+  background-color: rgba(255, 246, 251, 0.8);
   position: relative;
   height: 100%;
   z-index: -1;
@@ -3690,7 +3690,7 @@ input[type=checkbox] {
   margin-top: 15px;
 }
 .brand .brand__tit pre {
-  margin: 15px 0 0 0;
+  margin: 10px 0 0 0;
 }
 .brand .brand-product__wrap {
   height: 500px;
@@ -4028,9 +4028,15 @@ input[type=checkbox] {
   font-size: 1.2rem;
   font-weight: 300;
 }
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 1023px) {
   .brand .brand__tit pre {
     font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .brand .brand__tit pre {
+    font-size: 2.7rem;
+    font-weight: 400;
   }
 }
 .brand .brand__tit .brand__more {
@@ -4044,6 +4050,11 @@ input[type=checkbox] {
 @media (max-width: 1023px) {
   .brand .brand__tit .brand__more {
     width: 140px;
+  }
+}
+@media (min-width: 1024px) {
+  .brand {
+    text-align: left;
   }
 }
 .brand .brand-product__cont {
