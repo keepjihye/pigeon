@@ -357,7 +357,7 @@
         @include tabletLess {
             font-size: 20vw;
             img {
-                width: 18vw;
+                width: 19vw;
                 padding-top: 2vw;
                 padding-right: 5px;
             }
@@ -548,7 +548,7 @@
             }
             @include tabletLess {
                 display: flex;
-                gap: 50px;
+                gap: 30px;
                 animation-name: horizontalscroll;
                 animation-iteration-count: infinite;
                 animation-duration: 20s;

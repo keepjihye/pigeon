@@ -329,15 +329,18 @@
         align-items: center;
         gap: 10px;
         position: absolute;
-        top: 3%;
-        left: 15%;
+        top: 10px;
+        left: 130px;
         font-size: 1.2rem;
         color: $gray-70;
-        @include mobileMore {
+        @include tabletMore {
             top: 15px;
             left: 180px;
             font-size: 1.6rem;
-            right: $p-tablet;
+        }
+        @include tablet {
+            top: 18px;
+            left: 170px;
         }
     }
     .swiper-slide .dt-slide {

@@ -3543,7 +3543,7 @@ input[type=checkbox] {
     font-size: 20vw;
   }
   .main-visual__txtBox .main-visual__tit img {
-    width: 18vw;
+    width: 19vw;
     padding-top: 2vw;
     padding-right: 5px;
   }
@@ -3745,7 +3745,7 @@ input[type=checkbox] {
 @media (max-width: 1023px) {
   .brand .brand-product__wrap ul {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     animation-name: horizontalscroll;
     animation-iteration-count: infinite;
     animation-duration: 20s;
@@ -4175,17 +4175,22 @@ input[type=checkbox] {
   align-items: center;
   gap: 10px;
   position: absolute;
-  top: 3%;
-  left: 15%;
+  top: 10px;
+  left: 130px;
   font-size: 1.2rem;
   color: #555555;
 }
-@media (min-width: 600px) {
+@media (min-width: 1024px) {
   .sec-g__more {
     top: 15px;
     left: 180px;
     font-size: 1.6rem;
-    right: 30px;
+  }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .sec-g__more {
+    top: 18px;
+    left: 170px;
   }
 }
 .sec-g .swiper-slide .dt-slide a {
