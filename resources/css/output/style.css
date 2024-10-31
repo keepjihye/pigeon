@@ -3375,7 +3375,7 @@ input[type=checkbox] {
 }
 .nav-all__wrap #nav-all.active .gnb__depth1 li a span {
   color: #2d2d2d;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   display: flex;
   align-items: center;
