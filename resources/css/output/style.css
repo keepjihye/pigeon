@@ -3480,6 +3480,9 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
 }
+.main-visual .main-visual__txtBox .main-visual__tit .flower img {
+  vertical-align: middle;
+}
 .main-visual .main-visual__circle {
   width: 100%;
   height: 100%;
@@ -3534,7 +3537,6 @@ input[type=checkbox] {
   }
   .main-visual__txtBox .main-visual__tit img {
     width: 10vw;
-    padding-top: 3vw;
     padding-right: 5px;
   }
 }
@@ -3544,7 +3546,6 @@ input[type=checkbox] {
   }
   .main-visual__txtBox .main-visual__tit img {
     width: 16vw;
-    padding-top: 5.5vw;
     padding-right: 5px;
   }
 }
