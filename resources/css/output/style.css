@@ -3474,6 +3474,12 @@ input[type=checkbox] {
 .main-visual .main-visual__txtBox {
   color: #000;
 }
+.main-visual .main-visual__txtBox .main-visual__tit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .main-visual .main-visual__circle {
   width: 100%;
   height: 100%;
@@ -3526,10 +3532,18 @@ input[type=checkbox] {
   .main-visual__txtBox .main-visual__tit {
     font-size: 12vw;
   }
+  .main-visual__txtBox .main-visual__tit img {
+    width: 12vw;
+    padding-bottom: 1.5%;
+  }
 }
 @media (max-width: 1023px) {
   .main-visual__txtBox .main-visual__tit {
     font-size: 20vw;
+  }
+  .main-visual__txtBox .main-visual__tit img {
+    width: 20vw;
+    padding-bottom: 1.5%;
   }
 }
 .main-visual__txtBox .main-visual__con {

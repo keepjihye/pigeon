@@ -294,6 +294,12 @@
 
     .main-visual__txtBox {
         color: $black;
+        .main-visual__tit {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
     }
     .main-visual__circle {
         width: 100%;
@@ -342,9 +348,17 @@
         font-size: 5rem;
         @include tabletMore {
             font-size: 12vw;
+            img {
+                width: 12vw;
+                padding-bottom: 1.5%;
+            }
         }
         @include tabletLess {
             font-size: 20vw;
+            img {
+                width: 20vw;
+                padding-bottom: 1.5%;
+            }
         }
     }
     .main-visual__con {
