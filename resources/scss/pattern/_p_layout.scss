@@ -357,13 +357,15 @@
             img {
                 width: 10vw;
                 padding-right: 5px;
+                padding-bottom: 2vw;
             }
         }
         @include tabletLess {
             font-size: 20vw;
             img {
-                width: 19vw;
+                width: 17vw;
                 padding-right: 5px;
+                padding-bottom: 2vw;
             }
         }
     }
