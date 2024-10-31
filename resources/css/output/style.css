@@ -3379,13 +3379,12 @@ input[type=checkbox] {
 
 .util {
   display: flex;
-  justify-content: left;
+  justify-content: space-between;
   margin-left: 1vw;
 }
 @media (min-width: 1024px) {
   .util {
     width: 180px;
-    gap: 10%;
   }
 }
 .util .lang {

@@ -205,7 +205,7 @@
 // util
 .util {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     margin-left: 1vw;
     @include tabletMore {
         width: 180px;
