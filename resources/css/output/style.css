@@ -3527,7 +3527,7 @@ input[type=checkbox] {
 }
 @media (max-width: 1023px) {
   .main-visual__txtBox .main-visual__tit {
-    font-size: 24vw;
+    font-size: 20vw;
   }
 }
 .main-visual__txtBox .main-visual__con {
@@ -3540,7 +3540,7 @@ input[type=checkbox] {
 }
 @media (max-width: 1023px) {
   .main-visual__txtBox .main-visual__con {
-    font-size: 2.5vw;
+    font-size: 2.2vw;
   }
 }
 
