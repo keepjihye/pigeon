@@ -57,7 +57,7 @@ var tl = gsap.timeline({
         trigger: '.main-visual',
         pin: true, // 스크롤 중에 요소 고정
         start: 'top 0', // 시작 위치
-        end: '+=600', // 800px 스크롤 시까지 애니메이션
+        end: '+=700', // 800px 스크롤 시까지 애니메이션
         scrub: 1, // 부드러운 스크롤 효과
         // markers: true, // 마커 표시 (디버깅용)
     }
