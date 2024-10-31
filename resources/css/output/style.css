@@ -3174,7 +3174,7 @@ input[type=checkbox] {
   padding: 0 20px;
   margin: 0 auto;
 }
-@media (min-width: 600px) and (max-width: 1023px) {
+@media (min-width: 1024px) {
   .inner {
     padding: 0 30px;
   }
@@ -3516,6 +3516,7 @@ input[type=checkbox] {
   transform: translate(-50%, -50%);
   font-weight: bold;
   text-align: center;
+  white-space: nowrap;
 }
 .main-visual__txtBox .main-visual__tit {
   font-size: 5rem;
@@ -4077,6 +4078,20 @@ input[type=checkbox] {
 .dt-slide__lst li .sec-image {
   width: 100%;
   height: 220px;
+}
+
+.dt-slide a {
+  display: block;
+}
+.dt-slide a:hover .sec-image {
+  transition: 0.4s;
+  opacity: 0.6;
+}
+.dt-slide a:hover .sec-txt strong {
+  color: #5089ef;
+}
+.dt-slide a:hover .sec-txt em {
+  color: #5089ef;
 }
 
 .sec-g__more {

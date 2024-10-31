@@ -248,6 +248,26 @@
     }
 }
 
+.dt-slide {
+    a {
+        display: block;
+        &:hover {
+            .sec-image {
+                transition: 0.4s;
+                opacity: 0.6;
+            }
+            .sec-txt {
+                strong {
+                    color: $primary-40;
+                }
+                em {
+                    color: $primary-40;
+                }
+            }
+        }
+    }
+}
+
 // sec - news
 .sec-g {
     &__more {
