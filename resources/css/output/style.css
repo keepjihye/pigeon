@@ -3,6 +3,7 @@
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
 html,
 body {
   position: relative;
@@ -3288,11 +3289,12 @@ input[type=checkbox] {
   height: 90px;
   padding: 0 1vw;
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #1d1d1d;
 }
 #gnb .gnb__depth1 a:hover {
-  font-weight: bold;
+  color: #5089ef;
+  transition: 0.4s;
 }
 
 .nav-all__wrap {
@@ -3825,6 +3827,50 @@ input[type=checkbox] {
   position: relative;
   filter: brightness(90%);
 }
+.mySwiper2 .swiper-slide .swiper-slide__tit {
+  position: absolute;
+  top: 50%;
+  left: -20rem;
+  width: 650px;
+  height: 120px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 1.5s ease;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mySwiper2 .swiper-slide .swiper-slide__tit {
+    top: 90%;
+    width: 650px;
+    height: 120px;
+  }
+}
+@media (max-width: 599px) {
+  .mySwiper2 .swiper-slide .swiper-slide__tit {
+    top: 95%;
+    width: 650px;
+    height: 120px;
+  }
+}
+.mySwiper2 .swiper-slide .swiper-slide__tit .tit {
+  font-size: 8rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: -5px;
+  white-space: nowrap;
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+  .mySwiper2 .swiper-slide .swiper-slide__tit .tit {
+    font-size: 5rem;
+    letter-spacing: -4px;
+  }
+}
+@media (max-width: 599px) {
+  .mySwiper2 .swiper-slide .swiper-slide__tit .tit {
+    font-size: 2rem;
+    letter-spacing: -2px;
+  }
+}
 .mySwiper2 .swiper-slide .swiper-slide__txt {
   position: absolute;
   top: 20px;
@@ -3848,6 +3894,10 @@ input[type=checkbox] {
   .mySwiper2 .swiper-slide .swiper-slide__txt p {
     font-size: 1.6rem;
   }
+}
+.mySwiper2 .swiper-slide-active .swiper-slide__tit {
+  opacity: 1;
+  left: 35rem;
 }
 .mySwiper2 .slide1 {
   background: url(../../../resources/images/pattern/common/slide1.png) no-repeat;

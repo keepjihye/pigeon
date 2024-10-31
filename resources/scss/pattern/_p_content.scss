@@ -1,8 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
 // slide
 .mySwiper2 {
     .swiper-slide {
         position: relative;
         filter: brightness(90%);
+        .swiper-slide__tit {
+            position: absolute;
+            top: 50%;
+            left: -20rem;
+            width: 650px;
+            height: 120px;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            transition: 1.5s ease;
+            @include tablet {
+                top: 90%;
+                width: 650px;
+                height: 120px;
+            }
+            @include mobile {
+                top: 95%;
+                width: 650px;
+                height: 120px;
+            }
+            .tit {
+                font-size: 8rem;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 600;
+                color: rgba($color: $white, $alpha: 0.5);
+                letter-spacing: -5px;
+                white-space: nowrap;
+                @include tablet {
+                    font-size: 5rem;
+                    letter-spacing: -4px;
+                }
+                @include mobile {
+                    font-size: 2rem;
+                    letter-spacing: -2px;
+                }
+            }
+        }
+
         .swiper-slide__txt {
             position: absolute;
             top: $p-mobile;
@@ -15,6 +53,7 @@
                 font-size: 2rem;
                 @include mobileMore {
                     font-size: 3rem;
+                    // font-family: "Montserrat", sans-serif;
                 }
             }
             p {
@@ -25,6 +64,14 @@
             }
         }
     }
+
+    .swiper-slide-active {
+        .swiper-slide__tit {
+            opacity: 1;
+            left: 35rem;
+        }
+    }
+
     .slide1 {
         background: url(../../../resources/images/pattern/common/slide1.png) no-repeat;
         background-size: auto 100%;

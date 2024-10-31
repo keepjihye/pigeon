@@ -15,9 +15,9 @@ var swiper2 = new Swiper(".mySwiper2", {
     navigation: {
         nextEl: ".swiper-button-next", // 버튼이 밖으로 이동되어도 작동
     },
-    autoplay: {
-        delay: 4000,
-    },
+    // autoplay: {
+    //     delay: 4000,
+    // },
     thumbs: {
         swiper: swiper,
     },

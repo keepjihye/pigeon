@@ -4,103 +4,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FullPage.js Example</title>
-
-    <link rel="stylesheet" href="../resources/css/output/pattern_css.css">
-    <!-- fullPage.js CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.css" />
-    <!-- jQuery (필수) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- fullPage.js JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.min.js"></script>
-    <!-- gsap -->
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-
-
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
-    <!-- fullPage 컨테이너 -->
-    <div class="header">
-        header
+    <div class="box">
+        <p></p>
     </div>
-    <div id="fullpage">
-        <div class="section">
-            <div class="main-visual" style="background-color: #fff;">
-                <div class="main-visual__ani">
-                    <div class="main-visual__txtBox">
-                        <div class="main-visual__tit">PIGEON</div>
-                        <div class="main-visual__con">
-                            <span class="main-visual__con__txt">피죤은 고도의 기술력을</span>
-                            <span class="main-visual__con__txt">가지고 시대 변화에 발맞춰 지속적인 발전을</span>
-                            <span class="main-visual__con__txt">이루어 나갑니다</span>
-                        </div>
-                    </div>
-                    <div class="main-visual__circle">
-                        <video src="../resources/images/pattern/common/main-ani.mp4" playsinline="" loop="" muted=""
-                            autoplay=""> </video>
-                        <div class="main-visual__txtBox">
-                            <div class="main-visual__tit">PIGEON</div>
-                            <div class="main-visual__con">
-                                <span class="main-visual__con__txt">피죤은 고도의 기술력을</span>
-                                <span class="main-visual__con__txt">가지고 시대 변화에 발맞춰 지속적인 발전을</span>
-                                <span class="main-visual__con__txt">이루어 나갑니다</span>
-                            </div>
-                        </div>
-                    </div>
+    <div class="box1">
+        안녕하세요 hello
+    </div>
+    <div class="box2">
+        hello
+    </div>
+    <div class="box3">
+        hello
+    </div>
 
-                </div>
-            </div>
-        </div>
-        <div class="section">Section 2</div>
-        <div class="section">Section 3</div>
-        <div class="section">Section 4</div>
-    </div>
     <style>
-        /* 전체 화면 크기로 설정 */
+        @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 
-        .header {
-            width: 100%;
-            height: 100%;
-            background-color: red;
+        @font-face {
+            font-family: "GmarketSansMedium";
+            src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+            font-weight: normal;
+            font-style: normal;
         }
 
-        .section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        * {
+            font-size: 40px;
         }
 
-        /* 섹션별 배경색 */
-        .section:nth-child(1) {}
-
-        .section:nth-child(2) {
-            background-color: #e74c3c;
+        .box {
+            font-family: "GmarketSansMedium";
         }
 
-        .section:nth-child(3) {
-            background-color: #2ecc71;
-        }
-
-        .section:nth-child(4) {
-            background-color: #9b59b6;
+        .box2 {
+            font-family: "Montserrat", sans-serif;
         }
     </style>
-    <!-- fullPage 초기화 스크립트 -->
-    <script>
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                navigation: true,        // 우측 네비게이션 표시
-                anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'], // 앵커 설정
-
-            });
-        });
-
-
-
-
-    </script>
 </body>
 
 </html>
