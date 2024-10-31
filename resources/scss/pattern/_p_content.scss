@@ -330,7 +330,7 @@
         gap: 10px;
         position: absolute;
         top: 10px;
-        left: 130px;
+        left: 135px;
         font-size: 1.2rem;
         color: $gray-70;
         @include tabletMore {
@@ -542,7 +542,7 @@
             display: flex;
             flex-direction: column;
             font-size: 1.6rem;
-            font-weight: 600;
+            font-weight: bold;
             a {
                 padding-top: 5px;
             }

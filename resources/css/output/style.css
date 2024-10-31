@@ -4176,7 +4176,7 @@ input[type=checkbox] {
   gap: 10px;
   position: absolute;
   top: 10px;
-  left: 130px;
+  left: 135px;
   font-size: 1.2rem;
   color: #555555;
 }
@@ -4405,7 +4405,7 @@ input[type=checkbox] {
   display: flex;
   flex-direction: column;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: bold;
 }
 #footer .footer__wrap .footer_sns a {
   padding-top: 5px;
