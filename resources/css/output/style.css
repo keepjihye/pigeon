@@ -3528,9 +3528,6 @@ input[type=checkbox] {
   text-align: center;
   white-space: nowrap;
 }
-.main-visual__txtBox .main-visual__tit {
-  font-size: 5rem;
-}
 @media (min-width: 1024px) {
   .main-visual__txtBox .main-visual__tit {
     font-size: 12vw;
@@ -3541,14 +3538,23 @@ input[type=checkbox] {
     padding-bottom: 2vw;
   }
 }
-@media (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1023px) {
+  .main-visual__txtBox .main-visual__tit {
+    font-size: 15vw;
+  }
+  .main-visual__txtBox .main-visual__tit img {
+    width: 13vw;
+    padding-bottom: 2.5vw;
+  }
+}
+@media (max-width: 599px) {
   .main-visual__txtBox .main-visual__tit {
     font-size: 20vw;
   }
   .main-visual__txtBox .main-visual__tit img {
     width: 17vw;
     padding-right: 5px;
-    padding-bottom: 2vw;
+    padding-bottom: 3vw;
   }
 }
 .main-visual__txtBox .main-visual__con {
@@ -3559,7 +3565,12 @@ input[type=checkbox] {
     font-size: 1.3vw;
   }
 }
-@media (max-width: 1023px) {
+@media (min-width: 600px) and (max-width: 1023px) {
+  .main-visual__txtBox .main-visual__con {
+    font-size: 1.8vw;
+  }
+}
+@media (max-width: 599px) {
   .main-visual__txtBox .main-visual__con {
     font-size: 2.2vw;
   }
