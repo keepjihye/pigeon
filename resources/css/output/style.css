@@ -3850,7 +3850,7 @@ input[type=checkbox] {
   }
 }
 .mySwiper2 .slide1 {
-  background: url(../../../resources/images/pattern/common/slide_image1.png) no-repeat;
+  background: url(../../../resources/images/pattern/common/slide1.png) no-repeat;
   background-size: auto 100%;
   background-position: 80%;
 }
@@ -3863,7 +3863,7 @@ input[type=checkbox] {
   }
 }
 .mySwiper2 .slide2 {
-  background: url(../../../resources/images/pattern/common/slide_image2.jpg) no-repeat;
+  background: url(../../../resources/images/pattern/common/slide2.png) no-repeat;
   background-size: auto 100%;
   background-position: 80%;
 }
@@ -3876,7 +3876,7 @@ input[type=checkbox] {
   }
 }
 .mySwiper2 .slide3 {
-  background: url(../../../resources/images/pattern/common/slide_image3.jpg) no-repeat;
+  background: url(../../../resources/images/pattern/common/slide3.png) no-repeat;
   background-size: auto 100%;
   background-position: 80%;
 }
@@ -3921,7 +3921,7 @@ input[type=checkbox] {
 }
 @media (min-width: 1024px) {
   .mySwiper .swiper-slide .swiper-slide__prod-cont img {
-    height: 30%;
+    height: 40%;
     top: 35%;
     padding: 20px 0;
   }
