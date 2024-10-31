@@ -4,6 +4,7 @@
 /* **** scroll ****/
 /* **** form mixin ****/
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
 html,
 body {
   position: relative;
@@ -3287,8 +3288,9 @@ input[type=checkbox] {
   align-items: center;
   height: 90px;
   padding: 0 1vw;
+  font-family: "Noto Sans KR", serif;
   font-size: 1.6rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #1d1d1d;
 }
 #gnb .gnb__depth1 a:hover {
@@ -3298,6 +3300,7 @@ input[type=checkbox] {
 
 .nav-all__wrap {
   display: none;
+  font-family: "Noto Sans KR", serif;
   background-color: #717171;
 }
 .nav-all__wrap.active {
@@ -3382,6 +3385,7 @@ input[type=checkbox] {
   display: flex;
   justify-content: space-between;
   margin-left: 1vw;
+  font-family: "Noto Sans KR", serif;
 }
 @media (min-width: 1024px) {
   .util {

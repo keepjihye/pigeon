@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+
 // 그리드역할
 .inner {
     width: 100%;
@@ -108,8 +110,9 @@
             align-items: center;
             height: 90px;
             padding: 0 1vw;
+            font-family: "Noto Sans KR", serif;
             font-size: 1.6rem;
-            font-weight: 600;
+            font-weight: 500;
             color: $gray-90;
             &:hover {
                 color: rgb(255, 103, 153);
@@ -122,6 +125,7 @@
 // nav-all
 .nav-all__wrap {
     display: none;
+    font-family: "Noto Sans KR", serif;
     &.active {
         position: relative;
         display: block;
@@ -208,6 +212,7 @@
     display: flex;
     justify-content: space-between;
     margin-left: 1vw;
+    font-family: "Noto Sans KR", serif;
     @include tabletMore {
         width: 180px;
     }
