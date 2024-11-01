@@ -3170,11 +3170,6 @@ input[type=checkbox] {
   border-width: 2px;
 }
 
-.cursor {
-  position: absolute;
-  z-index: 10000;
-}
-
 .inner {
   width: 100%;
   max-width: 1500px;
@@ -3556,7 +3551,7 @@ input[type=checkbox] {
     font-size: 15vw;
   }
   .main-visual__txtBox .main-visual__tit img {
-    width: 13vw;
+    width: 12vw;
     padding-bottom: 2.5vw;
   }
 }
@@ -3566,7 +3561,6 @@ input[type=checkbox] {
   }
   .main-visual__txtBox .main-visual__tit img {
     width: 17vw;
-    padding-right: 5px;
     padding-bottom: 3vw;
   }
 }

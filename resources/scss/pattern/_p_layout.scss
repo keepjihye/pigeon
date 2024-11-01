@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
-
-.cursor {
-    position: absolute;
-    z-index: 10000;
-}
-
 // 그리드역할
 .inner {
     width: 100%;
@@ -374,7 +368,7 @@
         @include tablet {
             font-size: 15vw;
             img {
-                width: 13vw;
+                width: 12vw;
                 padding-bottom: 2.5vw;
             }
         }
@@ -383,7 +377,6 @@
             font-size: 20vw;
             img {
                 width: 17vw;
-                padding-right: 5px;
                 padding-bottom: 3vw;
             }
         }
