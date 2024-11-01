@@ -69,7 +69,12 @@
     .swiper-slide-active {
         .swiper-slide__tit {
             opacity: 1;
-            left: 35rem;
+            left: 32rem;
+            padding-left: $p-mobile;
+            @include tabletMore {
+                left: 35rem;
+                padding-left: 0;
+            }
         }
     }
 

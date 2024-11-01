@@ -3945,7 +3945,14 @@ input[type=checkbox] {
 }
 .mySwiper2 .swiper-slide-active .swiper-slide__tit {
   opacity: 1;
-  left: 35rem;
+  left: 32rem;
+  padding-left: 20px;
+}
+@media (min-width: 1024px) {
+  .mySwiper2 .swiper-slide-active .swiper-slide__tit {
+    left: 35rem;
+    padding-left: 0;
+  }
 }
 .mySwiper2 .slide1 {
   background: url(../../../resources/images/pattern/common/slide1.png) no-repeat;
