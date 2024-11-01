@@ -3847,6 +3847,9 @@ input[type=checkbox] {
   width: 100%;
   height: 100%;
 }
+#container .sec-contact .sec__tit {
+  margin-bottom: 10px;
+}
 #container .sec-contact .sec__map {
   width: 100vw;
   height: 300px;
