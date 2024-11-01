@@ -4580,6 +4580,7 @@ input[type=checkbox] {
   width: 80%;
   height: 100%;
   font-size: 1rem;
+  white-space: nowrap;
   margin-bottom: 10px;
 }
 @media (min-width: 600px) {
