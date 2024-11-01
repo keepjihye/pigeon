@@ -3921,7 +3921,7 @@ input[type=checkbox] {
 }
 @media (max-width: 599px) {
   .mySwiper2 .swiper-slide .swiper-slide__tit .tit {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: -2px;
   }
 }
