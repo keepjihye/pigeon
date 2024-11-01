@@ -4202,9 +4202,6 @@ input[type=checkbox] {
   color: #5089ef;
 }
 
-.sec-g__more {
-  display: inline-block;
-}
 .sec-g__more p {
   position: absolute !important;
   width: 1px !important;
@@ -4216,16 +4213,25 @@ input[type=checkbox] {
   white-space: nowrap !important;
   border: 0 !important;
 }
-.sec-g__more i {
+.sec-g__more::after {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  content: "\f061";
+  font-weight: bold;
   color: #555555;
 }
 @media (min-width: 1024px) {
-  .sec-g__more i {
+  .sec-g__more::after {
     font-size: 5rem;
   }
 }
-@media (max-width: 1023px) {
-  .sec-g__more i {
+@media (min-width: 600px) and (max-width: 1023px) {
+  .sec-g__more::after {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 599px) {
+  .sec-g__more::after {
     font-size: 3rem;
   }
 }

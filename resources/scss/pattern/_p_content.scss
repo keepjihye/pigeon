@@ -323,15 +323,20 @@
 // sec - news
 .sec-g {
     &__more {
-        display: inline-block;
         p {
             @include sr-only;
         }
-        i {
+        &::after {
+            @include lineAwesome;
+            content: "\f061";
+            font-weight: bold;
             @include tabletMore {
                 font-size: 5rem;
             }
-            @include tabletLess {
+            @include tablet {
+                font-size: 4rem;
+            }
+            @include mobile {
                 font-size: 3rem;
             }
 
