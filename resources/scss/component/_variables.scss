@@ -141,8 +141,11 @@ $spacers: (
     "full": "100%",
 ) !default;
 
+@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
+
 //font style
-$font-family-base: "Pretendard GOV", sans-serif !default;
+// $font-family-base: "Pretendard GOV", sans-serif !default;
+$font-family-base: "Noto Sans KR", serif !default;
 $font-size-root: 62.5% !default; //10px 1rem으로 설정
 $font-size-base: 1.7rem !default;
 

@@ -2,13 +2,42 @@
 
 .header2 {
     background-color: $white;
-    margin-bottom: 60px;
 }
 
+// header 부분 크기 포함한 상태로 만들어야함
 .intro {
     width: 100%;
-    height: 300px;
-    background: #555;
+    height: 460px;
+    background: #f2f2f2;
+
+    .intro__inner {
+        margin-top: 60px;
+        width: 100%;
+        height: 460px;
+        position: relative;
+        overflow: hidden;
+        .intro__tit {
+            white-space: nowrap;
+            position: absolute;
+            top: 50%;
+            left: $p-mobile;
+            transform: translate(0, -50%);
+            display: flex;
+            flex-direction: column;
+            p {
+                font-size: 1.6rem;
+                font-weight: 300;
+            }
+        }
+        img {
+            position: absolute;
+            bottom: -10%;
+            right: -10%;
+            width: 250px;
+            height: 220px;
+            opacity: 0.8;
+        }
+    }
 }
 
 .qucik-nav {
@@ -27,4 +56,16 @@
     width: 100%;
     height: 300px;
     background: #222;
+}
+
+.brands__prod {
+    width: 100%;
+    height: 1000px;
+    background: #666;
+}
+
+.Philosophy {
+    width: 100%;
+    height: 600px;
+    background: #888;
 }
