@@ -1,0 +1,48 @@
+.brand-person {
+    background: url("../../images/pattern/sub2/main_title01.png") no-repeat 0 0;
+    background-position: center;
+    // 뒷 배경만 투명도 조절하기
+    position: relative;
+    isolation: isolate;
+    &::after {
+        content: "";
+        position: absolute;
+        background: white;
+        z-index: -1;
+        inset: 0;
+        opacity: 0.8;
+    }
+
+    > * {
+        white-space: nowrap;
+    }
+    .brand-tit {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $gray-90;
+        .tit-line::after {
+            content: "";
+            display: inline-block;
+            height: 1px;
+            width: 80px;
+            background: $gray-60;
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+    }
+    .brand-person__tit {
+        font-size: 1.6rem;
+        color: $gray-90;
+    }
+    .brand-person__txt {
+        height: 100%;
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: $gray-60;
+        text-align: center;
+        letter-spacing: -0.05rem;
+        pre {
+            margin: 0;
+        }
+    }
+}
