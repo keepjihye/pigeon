@@ -5,7 +5,6 @@
 /* **** text attr ****/
 /* **** scroll ****/
 /* **** form mixin ****/
-@import url("https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap");
 html,
 body {
   position: relative;
@@ -3211,8 +3210,101 @@ input[type=checkbox] {
 
 .qucik-nav {
   width: 100%;
-  height: 50px;
-  background-color: #333;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+}
+.qucik-nav > div {
+  border: 0.5px solid #ccc;
+}
+.qucik-nav .quick-nav__home {
+  width: 10%;
+  position: relative;
+}
+.qucik-nav .quick-nav__home button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.qucik-nav .quick-nav__home button span {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.qucik-nav .quick-nav__home button::after {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  content: "\f015";
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #009ce1;
+}
+.qucik-nav .quick-nav__dep1 {
+  width: 45%;
+}
+.qucik-nav .quick-nav__dep1 h3 {
+  padding: 0 20px;
+  line-height: 40px;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.qucik-nav .quick-nav__dep2 {
+  width: 45%;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.qucik-nav .quick-nav__dep2 .dep2-btn {
+  width: 100%;
+  text-align: left;
+  height: 40px;
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.qucik-nav .quick-nav__dep2 .dep2-btn .dep2-dropbtn span {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.qucik-nav .quick-nav__dep2 .dep2-btn .dep2-dropbtn::after {
+  font-family: "Line Awesome Free";
+  font-weight: 900;
+  content: "\f106";
+  font-size: 1.6rem;
+  color: #555555;
+  transition: transform 0.5s ease;
+}
+.qucik-nav .quick-nav__dep2 .dep2-btn .dep2-dropbtn.active {
+  transform: rotate(180deg);
+}
+.qucik-nav .quick-nav__dep2 .dep2-lst {
+  display: none;
+}
+.qucik-nav .quick-nav__dep2 .dep2-lst .dep2-brand {
+  border-bottom: 0.5px solid #d8d8d8;
+}
+.qucik-nav .quick-nav__dep2 .dep2-lst .dep2-brand a {
+  padding: 0 20px;
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  text-align: left;
+  background-color: #fff;
 }
 
 .brand-person {
