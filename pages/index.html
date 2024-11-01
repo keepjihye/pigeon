@@ -25,6 +25,10 @@
     <!-- line awesome -->
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <!-- css -->
@@ -594,10 +598,15 @@
             <!-- cf & news -->
             <section class="sec sec-g sec-news" data-aos="fade-right" data-aos-duration="2000" data-aos-offset="600">
                 <div class="inner">
-                    <h2 class="sec__tit">CF & NEWS</h2>
+                    <div class="sec-g__title">
+                        <h2 class="sec__tit">CF & NEWS</h2>
+                        <a href="#" class="sec-g__more">
+                            <p>more+</p>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
                     <div class="sec__cont">
-
-                        <!-- 데스크탑 슬라이드 구간 -->
+                        <!-- 데스크탑-->
                         <div class="dt-slide">
                             <ul class="dt-slide__lst">
                                 <li>
@@ -669,6 +678,8 @@
                                 </li>
                             </ul>
                         </div>
+
+                        <!-- 모바일 / 태블릿 -->
                         <div class="swiper slide-news">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide slide1">
@@ -728,12 +739,12 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="sec-g__more">more+</a>
+
                 </div>
             </section>
 
             <!-- contact -->
-            <section class="sec sec-contact" data-aos="fade-left" data-aos-duration="2000" data-aos-offset="600">
+            <section class="sec sec-contact" data-aos="fade-left" data-aos-duration="2000" data-aos-offset="500">
                 <div class="inner">
                     <h2 class="sec__tit">CONTACT</h2>
                     <div class="sec__cont">

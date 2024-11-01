@@ -253,10 +253,7 @@
 // main
 .sec {
     .sec__tit {
-        border-bottom: 1px solid $gray-40;
-        padding-bottom: 5px;
-        margin-bottom: $p-mobile;
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: 400;
         @include mobile {
             font-size: 2rem;
@@ -326,22 +323,19 @@
 // sec - news
 .sec-g {
     &__more {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        position: absolute;
-        top: 10px;
-        left: 135px;
-        font-size: 1.2rem;
-        color: $gray-70;
-        @include tabletMore {
-            top: 15px;
-            left: 180px;
-            font-size: 1.6rem;
+        display: inline-block;
+        p {
+            @include sr-only;
         }
-        @include tablet {
-            top: 18px;
-            left: 170px;
+        i {
+            @include tabletMore {
+                font-size: 5rem;
+            }
+            @include tabletLess {
+                font-size: 3rem;
+            }
+
+            color: $gray-70;
         }
     }
     .swiper-slide .dt-slide {
@@ -468,9 +462,11 @@
             padding: 10px 0;
         }
         @include tabletMore {
-            width: 30%;
+            width: 35%;
             font-size: 1.5rem;
             padding: 10px 0;
+            white-space: nowrap;
+            max-width: 450px;
         }
         margin-bottom: 10px;
         .sec__pigeon__adr {

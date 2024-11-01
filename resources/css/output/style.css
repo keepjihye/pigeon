@@ -3738,12 +3738,11 @@ input[type=checkbox] {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  gap: 10px;
 }
 @media (min-width: 1024px) {
   .brand .brand-product__wrap {
     height: 100vh;
-    width: 40%;
+    width: 55%;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -3790,12 +3789,17 @@ input[type=checkbox] {
   height: 200px;
   border-radius: 30px;
   background-color: #fff;
+  transition: 0.6s ease-in-out;
 }
 @media (min-width: 1024px) {
   .brand .brand-product__wrap .brand-product__cont {
-    width: 170px;
-    max-width: 200px;
-    height: 220px;
+    width: 200px;
+    height: 240px;
+  }
+  .brand .brand-product__wrap .brand-product__cont:hover {
+    width: 220px;
+    height: 250px;
+    background-color: rgba(211, 225, 251, 0.7);
   }
 }
 
@@ -3830,6 +3834,14 @@ input[type=checkbox] {
 #container .sec-news {
   width: 100%;
   height: 100%;
+}
+#container .sec-g__title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 #container .sec-contact {
   width: 100%;
@@ -4124,10 +4136,7 @@ input[type=checkbox] {
 }
 
 .sec .sec__tit {
-  border-bottom: 1px solid #c6c6c6;
-  padding-bottom: 5px;
-  margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 400;
 }
 @media (max-width: 599px) {
@@ -4194,26 +4203,30 @@ input[type=checkbox] {
 }
 
 .sec-g__more {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  top: 10px;
-  left: 135px;
-  font-size: 1.2rem;
+  display: inline-block;
+}
+.sec-g__more p {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.sec-g__more i {
   color: #555555;
 }
 @media (min-width: 1024px) {
-  .sec-g__more {
-    top: 15px;
-    left: 180px;
-    font-size: 1.6rem;
+  .sec-g__more i {
+    font-size: 5rem;
   }
 }
-@media (min-width: 600px) and (max-width: 1023px) {
-  .sec-g__more {
-    top: 18px;
-    left: 170px;
+@media (max-width: 1023px) {
+  .sec-g__more i {
+    font-size: 3rem;
   }
 }
 .sec-g .swiper-slide .dt-slide a {
@@ -4347,9 +4360,11 @@ input[type=checkbox] {
 }
 @media (min-width: 1024px) {
   .sec-contact .sec__cont {
-    width: 30%;
+    width: 35%;
     font-size: 1.5rem;
     padding: 10px 0;
+    white-space: nowrap;
+    max-width: 450px;
   }
 }
 .sec-contact .sec__cont .sec__pigeon__adr {
