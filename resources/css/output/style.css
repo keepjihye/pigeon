@@ -3328,7 +3328,13 @@ input[type=checkbox] {
 
 .promise {
   width: 100%;
-  height: 300px;
+}
+.promise .inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
 }
 
 .brands__prod {
@@ -4077,12 +4083,12 @@ input[type=checkbox] {
   margin: 0 5px;
 }
 
-.brand-person__tit {
+.brand-subtit {
   font-size: 1.6rem;
   color: #1d1d1d;
 }
 
-.brand-person__txt {
+.brand-person .brand-person__con {
   height: 100%;
   font-size: 1.2rem;
   font-weight: 300;
@@ -4090,7 +4096,7 @@ input[type=checkbox] {
   text-align: center;
   letter-spacing: -0.05rem;
 }
-.brand-person__txt pre {
+.brand-person .brand-person__con pre {
   margin: 0;
 }
 
